@@ -7,10 +7,15 @@ class SecondsPastMidnight {
         Scanner scanner = new Scanner(System.in);
 
         //Reads int from user
-        int number = scanner.nextInt();
+        int seconds = scanner.nextInt();
+        int hours;
+        int minutes;
 
-        //Your code goes here
-
+        //Finds hours by deviding seconds by 3600
+        //Finds minutes by deviding seconds by 60. Then it prints the //results
+        hours = seconds / 3600;
+        minutes = seconds / 60;
+        System.out.print(hours + " " + minutes);
 
         // closing the scanner object
         scanner.close();
